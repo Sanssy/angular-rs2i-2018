@@ -4,19 +4,19 @@ import { CollectionService } from '../../../core/services/collection.service';
 import { State } from '../../../shared/enums/state.enum';
 
 @Component({
-  selector: 'app-delivered-list',
-  templateUrl: './delivered-list.component.html',
-  styleUrls: ['./delivered-list.component.css']
+  selector: 'app-delivered',
+  templateUrl: './delivered.component.html',
+  styleUrls: ['./delivered.component.css']
 })
-export class DeliveredListComponent implements OnInit {
+export class DeliveredComponent implements OnInit {
 
-  public delivered: Item[];
+  public collection: Item[];
   public state = State;
 
   constructor(private collectionsService: CollectionService) { }
 
   ngOnInit() {
-    this.delivered = this.collectionsService.collection;
+    this.collection = this.collectionsService.collection;
   }
 
 }

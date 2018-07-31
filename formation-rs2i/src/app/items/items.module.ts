@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { SharedModule } from '../shared/shared.module';
 
 import { ListComponent } from './containers/list/list.component';
-import { DeliveredListComponent } from './containers/delivered-list/delivered-list.component';
+import { DeliveredComponent } from './containers/delivered/delivered.component';
 import { AbstractComponent } from './containers/abstract/abstract.component';
 
 @NgModule({
@@ -12,7 +12,7 @@ import { AbstractComponent } from './containers/abstract/abstract.component';
     CommonModule,
     SharedModule
   ],
-  declarations: [ListComponent, DeliveredListComponent, AbstractComponent],
-  exports: [ListComponent, DeliveredListComponent]
+  declarations: [ListComponent, DeliveredComponent, AbstractComponent],
+  exports: [ListComponent, DeliveredComponent]
 })
 export class ItemsModule { }

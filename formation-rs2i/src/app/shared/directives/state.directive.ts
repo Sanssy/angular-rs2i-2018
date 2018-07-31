@@ -1,6 +1,6 @@
 import { Directive, Input, OnChanges, HostBinding } from '@angular/core';
 import { State } from '../enums/state.enum';
-import { concat } from '../../../../node_modules/rxjs';
+import { concat } from 'rxjs';
 
 @Directive({
   selector: '[appState]'
