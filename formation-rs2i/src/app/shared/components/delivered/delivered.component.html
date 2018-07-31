@@ -1,0 +1,12 @@
+<div class="card">
+    <div class="card-header">
+      {{itemD.state}}
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{itemD.name}}</h5>
+      <p class="card-text">{{itemD.reference}}</p>
+      <p class="card-text"> {{ itemD.deliveryDate | date  : 'fullDate' | capitalize }} </p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+
