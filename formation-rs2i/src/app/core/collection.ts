@@ -11,7 +11,7 @@ export const COLLECTION: Item[] = [
   },
   {
     id: 'kjghkiu',
-    name: 'Yuzhy',
+    name: 'Yuzhu',
     reference: '1591',
     deliveryDate: '2018-07-29T22:00:00.000Z',
     state: State.ENCOURS

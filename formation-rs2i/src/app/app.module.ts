@@ -1,5 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
+
+import { registerLocaleData } from '@angular/common';
+import localeFr from '@angular/common/locales/fr';
+// the second parameter 'fr' is optional
+registerLocaleData(localeFr, 'fr');
 
 import { CoreModule } from './core/core.module';
 import { HomeModule } from './home/home.module';
@@ -26,7 +31,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     NgbModule.forRoot()
 
   ],
-  providers: [],
+  providers: [{ provide: LOCALE_ID, useValue: 'fr' } ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

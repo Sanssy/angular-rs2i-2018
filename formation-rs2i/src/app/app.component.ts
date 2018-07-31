@@ -7,9 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'formation-rs2i';
-  data = new Date(2018, 6, 29);
-
-  constructor() {
-    console.log(this.data.toISOString());
-  }
 }

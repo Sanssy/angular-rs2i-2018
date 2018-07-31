@@ -6,7 +6,9 @@ import { COLLECTION } from '../collection';
   providedIn: 'root'
 })
 export class CollectionService {
+
   private _collection: Item[];
+
   constructor() {
     this.collection = COLLECTION;
   }
@@ -37,6 +39,9 @@ export class CollectionService {
   /**
    * update 1 item in collection
    */
+  public update(arg0: Item): void {
+    // update + catch pour les erreurs
+  }
 
   /**
    * delete 1 item collection
