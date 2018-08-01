@@ -10,7 +10,6 @@ export class FilterByStatePipe implements PipeTransform {
     if (args) {
       return value.filter(item => item.state === State.LIVREE);
     }
-    return value.filter(item => item.state !== State.LIVREE);
+      return value.filter(item => item.state !== State.LIVREE);
   }
-
 }

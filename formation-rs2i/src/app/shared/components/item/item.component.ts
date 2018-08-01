@@ -11,7 +11,7 @@ import { CollectionService } from '../../../core/services/collection.service';
 export class ItemComponent implements OnInit {
   public state = State;
   @Input() item: Item;
-
+  public states = Object.values(State);
   constructor(private collectionService: CollectionService) { }
 
   ngOnInit() {

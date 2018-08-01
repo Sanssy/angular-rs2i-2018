@@ -7,14 +7,15 @@ import { FilterByStatePipe } from './pipes/filter-by-state.pipe';
 import { StateDirective } from './directives/state.directive';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
-import { DeliveredComponent } from './components/delivered/delivered.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   imports: [
     CommonModule,
-    NgbModule
+    NgbModule,
+    RouterModule
   ],
-  declarations: [NavComponent, ItemComponent, CapitalizePipe, FilterByStatePipe, DeliveredComponent, StateDirective],
+  declarations: [NavComponent, ItemComponent, CapitalizePipe, FilterByStatePipe, StateDirective],
   exports: [NavComponent, ItemComponent, FilterByStatePipe]
 })
 export class SharedModule { }

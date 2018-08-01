@@ -6,6 +6,7 @@ import localeFr from '@angular/common/locales/fr';
 // the second parameter 'fr' is optional
 registerLocaleData(localeFr, 'fr');
 
+import { AppRoutingModule } from './app-routing.module';
 import { CoreModule } from './core/core.module';
 import { HomeModule } from './home/home.module';
 import { ItemsModule } from './items/items.module';
@@ -15,23 +16,30 @@ import { SharedModule } from './shared/shared.module';
 
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { Router } from '@angular/router';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule,
     CoreModule,
-    LoginModule,
-    PageNotFoundModule,
     SharedModule,
+    LoginModule,
     HomeModule,
+    BrowserModule,
     ItemsModule,
-    NgbModule.forRoot()
+    AppRoutingModule,
+    NgbModule.forRoot(),
+    PageNotFoundModule
 
   ],
   providers: [{ provide: LOCALE_ID, useValue: 'fr' } ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  // Diagnostic only: inspect router configuration
+  constructor(router: Router) {
+    console.log('Routes: ', JSON.stringify(router.config, undefined, 2));
+  }
+ }
