@@ -30,7 +30,9 @@ export class CollectionService {
    /**
    * add 1 item from collection
    */
-
+  public add(item: Item): void {
+    this.collection.push(item);
+  }
 
   /**
    * get 1 item from collection

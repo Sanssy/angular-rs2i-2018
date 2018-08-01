@@ -20,4 +20,8 @@ export class ListComponent extends AbstractComponent implements OnInit {
     console.log('test');
   }
 
+  public add(item: Item): void {
+    console.log(item);
+  }
+
 }

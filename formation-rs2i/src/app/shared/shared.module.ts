@@ -5,17 +5,21 @@ import { ItemComponent } from './components/item/item.component';
 import { CapitalizePipe } from './pipes/capitalize.pipe';
 import { FilterByStatePipe } from './pipes/filter-by-state.pipe';
 import { StateDirective } from './directives/state.directive';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+import { FormsModule } from '@angular/forms';
 
 import { RouterModule } from '@angular/router';
+import { FormComponent } from './components/form/form.component';
 
 @NgModule({
   imports: [
     CommonModule,
     NgbModule,
-    RouterModule
+    RouterModule,
+    FormsModule
   ],
-  declarations: [NavComponent, ItemComponent, CapitalizePipe, FilterByStatePipe, StateDirective],
-  exports: [NavComponent, ItemComponent, FilterByStatePipe]
+  declarations: [NavComponent, ItemComponent, CapitalizePipe, FilterByStatePipe, StateDirective, FormComponent],
+  exports: [NavComponent, ItemComponent, FilterByStatePipe, FormComponent, FormsModule]
 })
 export class SharedModule { }

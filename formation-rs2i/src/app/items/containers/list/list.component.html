@@ -1,3 +1,4 @@
+<app-form (nItem)="add($event)"></app-form>
 <div class="container">
   <ng-container *ngFor="let cmd of collection | filterByState">
     <app-item [item]="cmd"></app-item>
