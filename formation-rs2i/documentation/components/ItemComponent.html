@@ -281,6 +281,9 @@
                             <li class="link">
                                 <a href="injectables/CollectionService.html" data-type="entity-link">CollectionService</a>
                             </li>
+                            <li class="link">
+                                <a href="injectables/DateService.html" data-type="entity-link">DateService</a>
+                            </li>
                     </ul>
                 </li>
 
@@ -609,6 +612,9 @@
                             <li class="link">
                                 <a href="injectables/CollectionService.html" data-type="entity-link">CollectionService</a>
                             </li>
+                            <li class="link">
+                                <a href="injectables/DateService.html" data-type="entity-link">DateService</a>
+                            </li>
                     </ul>
                 </li>
 
@@ -798,6 +804,10 @@
                                 <a href="#changeState">changeState</a>
                             </li>
                             <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#delete">delete</a>
+                            </li>
+                            <li>
                                 <a href="#ngOnInit">ngOnInit</a>
                             </li>
                         </ul>
@@ -832,12 +842,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(collectionService: <a href="../injectables/CollectionService.html">CollectionService</a>)</code>
+<code>constructor(collectionService: <a href="../injectables/CollectionService.html">CollectionService</a>, route: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/shared/components/item/item.component.ts:19</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/shared/components/item/item.component.ts:20</a></div>
                             </td>
                         </tr>
 
@@ -859,6 +869,18 @@
                                                   
                                                         <td>
                                                                     <code><a href="../injectables/CollectionService.html" target="_self" >CollectionService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>route</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -893,7 +915,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/shared/components/item/item.component.ts:14</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/shared/components/item/item.component.ts:15</a></div>
                             </td>
                         </tr>
             </tbody>
@@ -931,7 +953,7 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/shared/components/item/item.component.ts:26</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/shared/components/item/item.component.ts:31</a></div>
                             </td>
                         </tr>
 
@@ -982,6 +1004,46 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
+                        <a name="delete"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            delete
+                            </b>
+                            <a href="#delete"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>delete()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/shared/components/item/item.component.ts:43</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
                         <a name="ngOnInit"></a>
                         <span class="name">
                             <b>
@@ -1000,7 +1062,7 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/shared/components/item/item.component.ts:23</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/shared/components/item/item.component.ts:27</a></div>
                             </td>
                         </tr>
 
@@ -1049,7 +1111,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/shared/components/item/item.component.ts:17</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/shared/components/item/item.component.ts:18</a></div>
                             </td>
                         </tr>
 
@@ -1082,7 +1144,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/shared/components/item/item.component.ts:18</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/shared/components/item/item.component.ts:19</a></div>
                             </td>
                         </tr>
 
@@ -1115,7 +1177,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/shared/components/item/item.component.ts:19</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/shared/components/item/item.component.ts:20</a></div>
                             </td>
                         </tr>
 
@@ -1149,7 +1211,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/shared/components/item/item.component.ts:15</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/shared/components/item/item.component.ts:16</a></div>
                             </td>
                         </tr>
 
@@ -1183,7 +1245,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/shared/components/item/item.component.ts:16</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/shared/components/item/item.component.ts:17</a></div>
                             </td>
                         </tr>
 
@@ -1201,6 +1263,7 @@ import { Item } from &#x27;../../interfaces/item&#x27;;
 import { State } from &#x27;../../enums/state.enum&#x27;;
 import { CollectionService } from &#x27;../../../core/services/collection.service&#x27;;
 import { faCoffee, faPenSquare, faTrashAlt } from &#x27;@fortawesome/free-solid-svg-icons&#x27;;
+import { Router } from &#x27;../../../../../node_modules/@angular/router&#x27;;
 
 
 @Component({
@@ -1216,17 +1279,36 @@ export class ItemComponent implements OnInit {
   faPenSquare &#x3D; faPenSquare;
   faTrashAlt &#x3D; faTrashAlt;
 
-  constructor(private collectionService: CollectionService) { }
+  constructor(
+    private collectionService: CollectionService,
+    private route: Router,
+  ) { }
 
   ngOnInit() {
   }
 
+
   public changeState(state: State): void {
-    this.item.state &#x3D; state;
-    // update item using collectionService in database
-    this.collectionService.update(this.item);
+  this.item.state &#x3D; state;
+  // update item using collectionService in database
+    return this.collectionService.update(this.item);
+    // this.collectionService.update(item).subscribe((data) &#x3D;&gt;{
+    //   if (data) {
+    //     data.state &#x3D; item.state;
+    //   };
+    // });
   }
 
+
+  public delete(): void {
+    console.log(&#x27;test&#x27;);
+    this.collectionService.delete(this.item);
+  //   this.collectionService.delete(item).subscribe((data) &#x3D;&gt; {
+  //     if (data) {
+
+  //     }
+  //   });
+  }
 }
 </code></pre>
     </div>
@@ -1240,7 +1322,7 @@ export class ItemComponent implements OnInit {
     &lt;span class&#x3D;&quot;state-livree&quot; *ngIf&#x3D;&quot;state.LIVREE &#x3D;&#x3D;&#x3D; item.state&quot;&gt;{{item.state}}&lt;/span&gt; --&gt;
       &lt;span [appState]&#x3D;&quot;item.state&quot;&gt;{{item.state}}&lt;/span&gt;
 
-      &lt;button class&#x3D;&quot;btn btn-danger float-right&quot; style&#x3D;&quot;margin-left: 0.5em;&quot;&gt;
+      &lt;button class&#x3D;&quot;btn btn-danger float-right&quot; style&#x3D;&quot;margin-left: 0.5em;&quot; (click)&#x3D;&quot;delete()&quot;&gt;
         &lt;fa-icon [icon]&#x3D;&quot;faTrashAlt&quot;&gt;&lt;/fa-icon&gt;
       &lt;/button&gt;
       &lt;button class&#x3D;&quot;btn btn-info float-right&quot;&gt;
@@ -1253,6 +1335,8 @@ export class ItemComponent implements OnInit {
     &lt;h5 class&#x3D;&quot;card-title&quot;&gt;{{item.name}}&lt;/h5&gt;
     &lt;p class&#x3D;&quot;card-text&quot;&gt;{{item.reference}}&lt;/p&gt;
     &lt;p class&#x3D;&quot;card-text&quot;&gt; {{ item.deliveryDate | date  : &#x27;fullDate&#x27; | capitalize }} &lt;/p&gt;
+
+
     &lt;!-- &lt;button class&#x3D;&quot;btn tn-primary&quot; class&#x3D;&quot;btn btn-primary&quot; *ngIf&#x3D;&quot;state.ALIVRER &#x3D;&#x3D;&#x3D; item.state&quot; (click)&#x3D;&quot;changeState(state.ENCOURS)&quot;&gt;{{state.ENCOURS}}&lt;/button&gt;
     &lt;button class&#x3D;&quot;btn tn-primary&quot; class&#x3D;&quot;btn btn-primary&quot; *ngIf&#x3D;&quot;state.ENCOURS &#x3D;&#x3D;&#x3D; item.state&quot; (click)&#x3D;&quot;changeState(state.LIVREE)&quot;&gt;{{state.LIVREE}}&lt;/button&gt; --&gt;
 
@@ -1290,7 +1374,7 @@ export class ItemComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div class="card">  <div class="card-header">    <!-- <span class="state-alivrer" *ngIf="state.ALIVRER === item.state">{{item.state}}</span>    <span class="state-encours" *ngIf="state.ENCOURS === item.state">{{item.state}}</span>    <span class="state-livree" *ngIf="state.LIVREE === item.state">{{item.state}}</span> -->      <span [appState]="item.state">{{item.state}}</span>      <button class="btn btn-danger float-right" style="margin-left: 0.5em;">        <fa-icon [icon]="faTrashAlt"></fa-icon>      </button>      <button class="btn btn-info float-right">          <fa-icon [icon]="faPenSquare"></fa-icon>      </button>  </div>  <div class="card-body">    <h5 class="card-title">{{item.name}}</h5>    <p class="card-text">{{item.reference}}</p>    <p class="card-text"> {{ item.deliveryDate | date  : \'fullDate\' | capitalize }} </p>    <!-- <button class="btn tn-primary" class="btn btn-primary" *ngIf="state.ALIVRER === item.state" (click)="changeState(state.ENCOURS)">{{state.ENCOURS}}</button>    <button class="btn tn-primary" class="btn btn-primary" *ngIf="state.ENCOURS === item.state" (click)="changeState(state.LIVREE)">{{state.LIVREE}}</button> -->    <ng-container *ngFor="let state of states">      <button class="btn" [ngClass]="{\'btn-info\': item.state === state, \'btn-secondary\': item.state !== state}" (click)="changeState(state)">{{ state }}</button>    </ng-container>  </div></div></div>'
+        var COMPONENT_TEMPLATE = '<div><div class="card">  <div class="card-header">    <!-- <span class="state-alivrer" *ngIf="state.ALIVRER === item.state">{{item.state}}</span>    <span class="state-encours" *ngIf="state.ENCOURS === item.state">{{item.state}}</span>    <span class="state-livree" *ngIf="state.LIVREE === item.state">{{item.state}}</span> -->      <span [appState]="item.state">{{item.state}}</span>      <button class="btn btn-danger float-right" style="margin-left: 0.5em;" (click)="delete()">        <fa-icon [icon]="faTrashAlt"></fa-icon>      </button>      <button class="btn btn-info float-right">          <fa-icon [icon]="faPenSquare"></fa-icon>      </button>  </div>  <div class="card-body">    <h5 class="card-title">{{item.name}}</h5>    <p class="card-text">{{item.reference}}</p>    <p class="card-text"> {{ item.deliveryDate | date  : \'fullDate\' | capitalize }} </p>    <!-- <button class="btn tn-primary" class="btn btn-primary" *ngIf="state.ALIVRER === item.state" (click)="changeState(state.ENCOURS)">{{state.ENCOURS}}</button>    <button class="btn tn-primary" class="btn btn-primary" *ngIf="state.ENCOURS === item.state" (click)="changeState(state.LIVREE)">{{state.LIVREE}}</button> -->    <ng-container *ngFor="let state of states">      <button class="btn" [ngClass]="{\'btn-info\': item.state === state, \'btn-secondary\': item.state !== state}" (click)="changeState(state)">{{ state }}</button>    </ng-container>  </div></div></div>'
     var COMPONENTS = [{'name': 'AbstractComponent', 'selector': 'app-abstract'},{'name': 'AddComponent', 'selector': 'app-add'},{'name': 'AddReactiveComponent', 'selector': 'app-add-reactive'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'DeliveredComponent', 'selector': 'app-delivered'},{'name': 'FormComponent', 'selector': 'app-form'},{'name': 'FormReactiveComponent', 'selector': 'app-form-reactive'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'ItemComponent', 'selector': 'app-item'},{'name': 'ListComponent', 'selector': 'app-list'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'NavComponent', 'selector': 'app-nav'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'}];
     var DIRECTIVES = [{'name': 'StateDirective', 'selector': '[appState]'}];
     var ACTUAL_COMPONENT = {'name': 'ItemComponent'};

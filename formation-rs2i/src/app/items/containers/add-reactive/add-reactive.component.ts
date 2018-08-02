@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CollectionService } from '../../../core/services/collection.service';
 import { Router } from '../../../../../node_modules/@angular/router';
 import { Item } from '../../../shared/interfaces/item';
+import { DateService } from '../../../core/services/date.service';
 
 @Component({
   selector: 'app-add-reactive',
@@ -12,7 +13,8 @@ export class AddReactiveComponent implements OnInit {
 
   constructor(
     private collectionService: CollectionService,
-    private router: Router
+    private router: Router,
+    private dateService: DateService,
   ) { }
 
   ngOnInit() {

@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { Item } from '../../../shared/interfaces/item';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { CollectionService } from '../../../core/services/collection.service';
+import { AbstractComponent } from '../abstract/abstract.component';
 import { State } from '../../../shared/enums/state.enum';
 
 @Component({
@@ -8,15 +8,16 @@ import { State } from '../../../shared/enums/state.enum';
   templateUrl: './delivered.component.html',
   styleUrls: ['./delivered.component.css']
 })
-export class DeliveredComponent implements OnInit {
+export class DeliveredComponent extends AbstractComponent implements OnInit {
+  public state: State;
+  constructor(
+    collectionService:  CollectionService
+   ) {
+     super(collectionService);
+     super.ngOnInit();
+    }
 
-  public collection: Item[];
-  public state = State;
-
-  constructor(private collectionsService: CollectionService) { }
-
-  ngOnInit() {
-    this.collection = this.collectionsService.collection;
-  }
+   ngOnInit() {
+   }
 
 }

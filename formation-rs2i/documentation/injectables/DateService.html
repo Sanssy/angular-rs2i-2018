@@ -677,15 +677,17 @@
 </nav>
                </div>
                <!-- START CONTENT -->
-               <div class="content component">
+               <div class="content injectable">
                    <div class="content-data">
 
 
 
 
+
+
 <ol class="breadcrumb">
-  <li>Components</li>
-  <li>ListComponent</li>
+  <li>Injectables</li>
+  <li>DateService</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
@@ -695,94 +697,23 @@
         <li >
             <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
         </li>
-        <li >
-            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
-        </li>
-        <li >
-            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
-        </li>
 </ul>
 
 <div class="tab-content">
-    <div class="tab-pane fade active in" id="c-info"><p class="comment">
-    <h3>File</h3>
-</p>
-<p class="comment">
-    <code>src/app/items/containers/list/list.component.ts</code>
-</p>
-
-
-    <p class="comment">
-        <h3>Extends</h3>
-    </p>
-    <p class="comment">
-            <code><a href="../components/AbstractComponent.html" target="_self" >AbstractComponent</a></code>
-    </p>
-
-    <p class="comment">
-        <h3>Implements</h3>
-    </p>
-    <p class="comment">
-                <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
-    </p>
-
-
-<section>
-    <h3>Metadata</h3>
-    <table class="table table-sm table-hover">
-        <tbody>
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/core/services/date.service.ts</code>
+        </p>
 
 
 
-
-
-
-
-
-
-
-
-            <tr>
-                <td class="col-md-3">selector</td>
-                <td class="col-md-9"><code>app-list</code></td>
-            </tr>
-
-            <tr>
-                <td class="col-md-3">styleUrls</td>
-                <td class="col-md-9"><code>list.component.css</code></td>
-            </tr>
-
-
-
-            <tr>
-                <td class="col-md-3">templateUrl</td>
-                <td class="col-md-9"><code>./list.component.html</code></td>
-            </tr>
-
-
-        </tbody>
-    </table>
-</section>
-
-    <section>
+            <section>
     <h3 id="index">Index</h3>
     <table class="table table-sm table-bordered index-table">
         <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <h6><b>Properties</b></h6>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <ul class="index-list">
-                            <li>
-                                    <span class="modifier">Public</span>
-                                <a href="#collection">collection</a>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
 
                 <tr>
                     <td class="col-md-4">
@@ -793,13 +724,12 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
-                                <a href="#ngOnInit">ngOnInit</a>
+                                    <span class="modifier">Public</span>
+                                <a href="#convertDateToIso">convertDateToIso</a>
                             </li>
                             <li>
-                                <a href="#ngOnDestroy">ngOnDestroy</a>
-                            </li>
-                            <li>
-                                <a href="#ngOnInit">ngOnInit</a>
+                                    <span class="modifier">Public</span>
+                                <a href="#dateToIso">dateToIso</a>
                             </li>
                         </ul>
                     </td>
@@ -813,18 +743,18 @@
     </table>
 </section>
 
-    <section>
+            <section>
     <h3 id="constructor">Constructor</h3>
         <table class="table table-sm table-bordered">
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(collectionService: <a href="../injectables/CollectionService.html">CollectionService</a>)</code>
+<code>constructor(ngbDateParserFormatter: NgbDateParserFormatter)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/items/containers/list/list.component.ts:10</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/app/core/services/date.service.ts:9</a></div>
                             </td>
                         </tr>
 
@@ -842,10 +772,10 @@
                                         </thead>
                                         <tbody>
                                                 <tr>
-                                                        <td>collectionService</td>
+                                                        <td>ngbDateParserFormatter</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/CollectionService.html" target="_self" >CollectionService</a></code>
+                                                                    <code>NgbDateParserFormatter</code>
                                                         </td>
                                                   
                                                     <td>
@@ -862,11 +792,7 @@
         </table>
 </section>
 
-
-
-
-
-    <section>
+            <section>
     
         <h3 id="methods">
             Methods
@@ -875,255 +801,177 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-                        <a name="ngOnInit"></a>
-                        <span class="name">
-                            <b>
-                            ngOnInit
-                            </b>
-                            <a href="#ngOnInit"><span class="fa fa-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-<code>ngOnInit()</code>
-                    </td>
-                </tr>
-
-
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/items/containers/list/list.component.ts:18</a></div>
-                            </td>
-                        </tr>
-
-
-                <tr>
-                    <td class="col-md-4">
-
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
-
-                            </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="ngOnDestroy"></a>
-                        <span class="name">
-                            <b>
-                            ngOnDestroy
-                            </b>
-                            <a href="#ngOnDestroy"><span class="fa fa-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-<code>ngOnDestroy()</code>
-                    </td>
-                </tr>
-
-
-                            <tr>
-                                <td class="col-md-4">
-                                    <div class="io-line">Inherited from     <code><a href="../components/AbstractComponent.html" target="_self" >AbstractComponent</a></code>
-</div>
-                                </td>
-                            </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in AbstractComponent:29</div>
-                            </td>
-                        </tr>
-
-
-                <tr>
-                    <td class="col-md-4">
-
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
-
-                            </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="ngOnInit"></a>
-                        <span class="name">
-                            <b>
-                            ngOnInit
-                            </b>
-                            <a href="#ngOnInit"><span class="fa fa-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-<code>ngOnInit()</code>
-                    </td>
-                </tr>
-
-
-                            <tr>
-                                <td class="col-md-4">
-                                    <div class="io-line">Inherited from     <code><a href="../components/AbstractComponent.html" target="_self" >AbstractComponent</a></code>
-</div>
-                                </td>
-                            </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in AbstractComponent:20</div>
-                            </td>
-                        </tr>
-
-
-                <tr>
-                    <td class="col-md-4">
-
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
-
-                            </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-</section>
-
-    <section>
-    
-        <h3 id="inputs">
-            Properties
-        </h3>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="collection"></a>
+                        <a name="convertDateToIso"></a>
                         <span class="name">
                             <b>
                                 <span class="modifier">Public</span>
-                            collection
+                            convertDateToIso
                             </b>
-                            <a href="#collection"><span class="fa fa-link"></span></a>
+                            <a href="#convertDateToIso"><span class="fa fa-link"></span></a>
                         </span>
                     </td>
                 </tr>
                 <tr>
                     <td class="col-md-4">
-                        <span class="modifier-icon fa fa-reset"></span><code>collection:     <code><a href="../interfaces/Item.html" target="_self" >Observable&lt;Item[]&gt;</a></code>
-</code>
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>convertDateToIso(item: <a href="../interfaces/Item.html">Item</a>)</code>
                     </td>
                 </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <i>Type : </i>    <code><a href="../interfaces/Item.html" target="_self" >Observable&lt;Item[]&gt;</a></code>
 
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-4">
-                                    <div class="io-line">Inherited from     <code><a href="../components/AbstractComponent.html" target="_self" >AbstractComponent</a></code>
-</div>
-                                </td>
-                            </tr>
+
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in AbstractComponent:12</div>
+                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/core/services/date.service.ts:14</a></div>
                             </td>
                         </tr>
 
 
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>item</td>
+                                                        <td>
+                                                                    <code><a href="../interfaces/Item.html" target="_self" >Item</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="dateToIso"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            dateToIso
+                            </b>
+                            <a href="#dateToIso"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>dateToIso(arg: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/core/services/date.service.ts:18</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>arg</td>
+                                                        <td>
+                                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
             </tbody>
         </table>
 </section>
 
-</div>
+
+    </div>
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, OnDestroy } from &#x27;@angular/core&#x27;;
-import { CollectionService } from &#x27;../../../core/services/collection.service&#x27;;
-import { AbstractComponent } from &#x27;../abstract/abstract.component&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+import { Item } from &#x27;../../shared/interfaces/item&#x27;;
+import { NgbDateParserFormatter } from &#x27;@ng-bootstrap/ng-bootstrap&#x27;;
 
-@Component({
-  selector: &#x27;app-list&#x27;,
-  templateUrl: &#x27;./list.component.html&#x27;,
-  styleUrls: [&#x27;./list.component.css&#x27;]
+
+@Injectable({
+  providedIn: &#x27;root&#x27;
 })
-export class ListComponent extends AbstractComponent implements OnInit {
+export class DateService {
+
   constructor(
-   collectionService:  CollectionService
-  ) {
-    super(collectionService);
-    super.ngOnInit();
-   }
+    private ngbDateParserFormatter: NgbDateParserFormatter,
+  ) { }
+  public convertDateToIso(item: Item): string {
+    return new Date(item.deliveryDate).toISOString();
+  }
 
-  ngOnInit() {
-     console.log(&#x27;test&#x27;);
-    }
-
-  // public add(item: Item): void {
-  //   console.log(item);
-  // }
-
-
+  public dateToIso(arg: any): string {
+    arg &#x3D; new Date(this.ngbDateParserFormatter.format(arg));
+    return arg.toISOString();
+  }
 }
 </code></pre>
     </div>
 
-    <div class="tab-pane fade " id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;!-- &lt;app-form (nItem)&#x3D;&quot;add($event)&quot;&gt;&lt;/app-form&gt; --&gt;
-&lt;div class&#x3D;&quot;container&quot; *ngIf&#x3D;&quot;collection&quot;&gt;
-  &lt;ng-container *ngFor&#x3D;&quot;let cmd of (collection | async) | filterByState&quot;&gt;
-    &lt;app-item [item]&#x3D;&quot;cmd&quot;&gt;&lt;/app-item&gt;
-  &lt;/ng-container&gt;
-&lt;/div&gt;
-</code></pre>
-    </div>
-
-    <div class="tab-pane fade " id="c-tree">
-        <div id="tree-container"></div>
-        <div class="tree-legend">
-            <div class="title">
-                <b>Legend</b>
-            </div>
-            <div>
-                <div class="color htmlelement"></div><span>Html element</span>
-            </div>
-            <div>
-                <div class="color component"></div><span>Component</span>
-            </div>
-            <div>
-                <div class="color directive"></div><span>Html element with directive</span>
-            </div>
-        </div>
-    </div>
-
-    
 </div>
-
-<script src="../js/libs/vis.min.js"></script>
-<script src="../js/libs/htmlparser.js"></script>
-<script src="../js/libs/deep-iterator.js"></script>
-<script>
-        var COMPONENT_TEMPLATE = '<div><!-- <app-form (nItem)="add($event)"></app-form> --><div class="container" *ngIf="collection">  <ng-container *ngFor="let cmd of (collection | async) | filterByState">    <app-item [item]="cmd"></app-item>  </ng-container></div></div>'
-    var COMPONENTS = [{'name': 'AbstractComponent', 'selector': 'app-abstract'},{'name': 'AddComponent', 'selector': 'app-add'},{'name': 'AddReactiveComponent', 'selector': 'app-add-reactive'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'DeliveredComponent', 'selector': 'app-delivered'},{'name': 'FormComponent', 'selector': 'app-form'},{'name': 'FormReactiveComponent', 'selector': 'app-form-reactive'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'ItemComponent', 'selector': 'app-item'},{'name': 'ListComponent', 'selector': 'app-list'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'NavComponent', 'selector': 'app-nav'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'}];
-    var DIRECTIVES = [{'name': 'StateDirective', 'selector': '[appState]'}];
-    var ACTUAL_COMPONENT = {'name': 'ListComponent'};
-</script>
-<script src="../js/tree.js"></script>
-
-
 
 
 
@@ -1158,8 +1006,8 @@ export class ListComponent extends AbstractComponent implements OnInit {
 
         <script>
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
-            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
-            var COMPODOC_CURRENT_PAGE_URL = 'ListComponent.html';
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'DateService.html';
         </script>
 
        <script src="../js/search/search.js"></script>

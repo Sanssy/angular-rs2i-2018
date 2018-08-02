@@ -281,6 +281,9 @@
                             <li class="link">
                                 <a href="injectables/CollectionService.html" data-type="entity-link">CollectionService</a>
                             </li>
+                            <li class="link">
+                                <a href="injectables/DateService.html" data-type="entity-link">DateService</a>
+                            </li>
                     </ul>
                 </li>
 
@@ -609,6 +612,9 @@
                             <li class="link">
                                 <a href="injectables/CollectionService.html" data-type="entity-link">CollectionService</a>
                             </li>
+                            <li class="link">
+                                <a href="injectables/DateService.html" data-type="entity-link">DateService</a>
+                            </li>
                     </ul>
                 </li>
 
@@ -789,6 +795,9 @@
                                 <a href="#createForm">createForm</a>
                             </li>
                             <li>
+                                <a href="#isError">isError</a>
+                            </li>
+                            <li>
                                 <a href="#ngOnInit">ngOnInit</a>
                             </li>
                             <li>
@@ -827,12 +836,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(fb: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>)</code>
+<code>constructor(fb: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, dateService: <a href="../injectables/DateService.html">DateService</a>)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/shared/components/form-reactive/form-reactive.component.ts:14</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/shared/components/form-reactive/form-reactive.component.ts:15</a></div>
                             </td>
                         </tr>
 
@@ -854,6 +863,18 @@
                                                   
                                                         <td>
                                                                     <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dateService</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="../injectables/DateService.html" target="_self" >DateService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -887,7 +908,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/shared/components/form-reactive/form-reactive.component.ts:14</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/shared/components/form-reactive/form-reactive.component.ts:15</a></div>
                             </td>
                         </tr>
             </tbody>
@@ -924,7 +945,7 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/shared/components/form-reactive/form-reactive.component.ts:23</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/shared/components/form-reactive/form-reactive.component.ts:26</a></div>
                             </td>
                         </tr>
 
@@ -936,6 +957,75 @@
                                 <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
                             </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isError"></a>
+                        <span class="name">
+                            <b>
+                            isError
+                            </b>
+                            <a href="#isError"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>isError(fieldName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/shared/components/form-reactive/form-reactive.component.ts:43</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>fieldName</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
                     </td>
                 </tr>
             </tbody>
@@ -962,7 +1052,7 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/shared/components/form-reactive/form-reactive.component.ts:19</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/shared/components/form-reactive/form-reactive.component.ts:22</a></div>
                             </td>
                         </tr>
 
@@ -1002,7 +1092,7 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/shared/components/form-reactive/form-reactive.component.ts:32</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/shared/components/form-reactive/form-reactive.component.ts:35</a></div>
                             </td>
                         </tr>
 
@@ -1053,7 +1143,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/shared/components/form-reactive/form-reactive.component.ts:12</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/shared/components/form-reactive/form-reactive.component.ts:13</a></div>
                             </td>
                         </tr>
 
@@ -1087,7 +1177,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/shared/components/form-reactive/form-reactive.component.ts:13</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/shared/components/form-reactive/form-reactive.component.ts:14</a></div>
                             </td>
                         </tr>
 
@@ -1104,6 +1194,7 @@
 import { FormGroup, FormBuilder, Validators } from &#x27;../../../../../node_modules/@angular/forms&#x27;;
 import { State } from &#x27;../../enums/state.enum&#x27;;
 import { Item } from &#x27;../../interfaces/item&#x27;;
+import { DateService } from &#x27;../../../core/services/date.service&#x27;;
 
 @Component({
   selector: &#x27;app-form-reactive&#x27;,
@@ -1116,6 +1207,8 @@ export class FormReactiveComponent implements OnInit {
   @Output() nItem: EventEmitter&lt;Item&gt; &#x3D; new EventEmitter();
   constructor(
     private fb: FormBuilder,
+    private dateService: DateService,
+
   ) { }
 
   ngOnInit() {
@@ -1124,16 +1217,23 @@ export class FormReactiveComponent implements OnInit {
 
   private createForm(): void {
     this.form &#x3D; this.fb.group({
-      name: [&#x27;&#x27;, [Validators.required, Validators.minLength(5) ]],
-      reference: [&#x27;&#x27;, [Validators.required, Validators.minLength(4) ]],
+      name: [&#x27;&#x27;, Validators.compose([Validators.required, Validators.minLength(5)])],
+      reference: [&#x27;&#x27;, Validators.compose([Validators.required, Validators.minLength(4)])],
       state: [State.ALIVRER],
-      deliveryDate: [&#x27;&#x27;],
+      deliveryDate: [&#x27;&#x27;], // possibilité de mettre un regex
     });
   }
 
   public process() {
-    console.log(this.form.value);
+    this.form.get(&#x27;deliveryDate&#x27;).setValue(this.dateService.dateToIso(this.form.get(&#x27;deliveryDate&#x27;)
+    .value));
     this.nItem.emit(this.form.value);
+    this.form.reset();
+    this.form.get(&#x27;state&#x27;).setValue(State.ALIVRER);
+    }
+
+    isError(fieldName: string): boolean {
+      return this.form.get(fieldName).invalid &amp;&amp; this.form.get(fieldName).touched;
     }
 }
 </code></pre>
@@ -1141,34 +1241,43 @@ export class FormReactiveComponent implements OnInit {
 
     <div class="tab-pane fade " id="c-templateData">
         <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;container&quot;&gt;
-    &lt;form novalidate (ngSubmit)&#x3D;&quot;process()&quot; [formGroup]&#x3D;&quot;form&quot;&gt;
+  &lt;form novalidate (ngSubmit)&#x3D;&quot;process()&quot; [formGroup]&#x3D;&quot;form&quot;&gt;
 
-      &lt;div class&#x3D;&quot;form-group&quot;&gt;
-        &lt;input formControlName&#x3D;&quot;name&quot; type&#x3D;&quot;texte&quot; class&#x3D;&quot;form-control&quot; placeholder&#x3D;&quot;Enter name&quot; &gt;
-        &lt;div class&#x3D;&quot;alert alert-danger&quot; *ngIf&#x3D;&quot;&quot;&gt;Champs invalide&lt;/div&gt;
-      &lt;/div&gt;
+    &lt;div class&#x3D;&quot;form-group&quot;&gt;
+      &lt;input formControlName&#x3D;&quot;name&quot; type&#x3D;&quot;texte&quot; class&#x3D;&quot;form-control&quot; placeholder&#x3D;&quot;Enter name&quot;&gt;
+      &lt;div class&#x3D;&quot;alert alert-danger&quot; *ngIf&#x3D;&quot;isError(&#x27;name&#x27;)&quot;&gt;Champs invalide &lt;/div&gt;
+    &lt;/div&gt;
 
       &lt;div class&#x3D;&quot;form-group&quot;&gt;
         &lt;input formControlName&#x3D;&quot;reference&quot; type&#x3D;&quot;texte&quot; class&#x3D;&quot;form-control&quot; placeholder&#x3D;&quot;Enter reference&quot;&gt;
+        &lt;div class&#x3D;&quot;alert alert-danger&quot; *ngIf&#x3D;&quot;isError(&#x27;reference&#x27;)&quot;&gt;Champs invalide&lt;/div&gt;
       &lt;/div&gt;
 
       &lt;div class&#x3D;&quot;form-group&quot;&gt;
-          &lt;select formControlName&#x3D;&quot;state&quot; class&#x3D;&quot;form-control&quot;&gt;
-            &lt;option *ngFor&#x3D;&quot;let state of states&quot; [ngValue]&#x3D;&quot;state&quot;&gt; {{ state }} &lt;/option&gt;
-          &lt;/select&gt;
+        &lt;select formControlName&#x3D;&quot;state&quot; class&#x3D;&quot;form-control&quot;&gt;
+          &lt;option *ngFor&#x3D;&quot;let state of states&quot; [ngValue]&#x3D;&quot;state&quot;&gt; {{ state }} &lt;/option&gt;
+        &lt;/select&gt;
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;form-group&quot;&gt;
+          &lt;input class&#x3D;&quot;form-control&quot; placeholder&#x3D;&quot;yyyy-mm-dd&quot;
+                 name&#x3D;&quot;dp&quot; formControlName&#x3D;&quot;deliveryDate&quot; ngbDatepicker #d&#x3D;&quot;ngbDatepicker&quot;  (click)&#x3D;&quot;d.toggle()&quot;&gt;
+          &lt;div class&#x3D;&quot;input-group-append&quot;&gt;
+            &lt;button class&#x3D;&quot;btn btn-outline-secondary&quot; type&#x3D;&quot;button&quot;&gt;
+              &lt;img src&#x3D;&quot;./assets/img/calendar-icon.svg&quot; style&#x3D;&quot;width: 1.2rem; height: 1rem; cursor: pointer;&quot;&gt;
+            &lt;/button&gt;
+          &lt;/div&gt;
         &lt;/div&gt;
-
-      &lt;div class&#x3D;&quot;form-group&quot;&gt;
-        &lt;input formControlName&#x3D;&quot;deliveryDate&quot; type&#x3D;&quot;date&quot; class&#x3D;&quot;form-control&quot; placeholder&#x3D;&quot;Delivery date&quot;&gt;
-      &lt;/div&gt;
 
       &lt;button [disabled]&#x3D;&quot;form.invalid&quot; type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn btn-primary&quot;&gt;Submit&lt;/button&gt;
 
       &lt;div class&#x3D;&quot;right float-right&quot;&gt;
-      &lt;button [disabled]&#x3D;&quot;form.invalid&quot; type&#x3D;&quot;reset&quot; class&#x3D;&quot;btn btn-primary&quot;&gt;Reset&lt;/button&gt;
+        &lt;button [disabled]&#x3D;&quot;form.invalid&quot; type&#x3D;&quot;reset&quot; class&#x3D;&quot;btn btn-primary&quot;&gt;Reset&lt;/button&gt;
       &lt;/div&gt;
-    &lt;/form&gt;
-  &lt;/div&gt;
+
+  &lt;/form&gt;
+
+&lt;/div&gt;
 </code></pre>
     </div>
 
@@ -1197,7 +1306,7 @@ export class FormReactiveComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div class="container">    <form novalidate (ngSubmit)="process()" [formGroup]="form">      <div class="form-group">        <input formControlName="name" type="texte" class="form-control" placeholder="Enter name" >        <div class="alert alert-danger" *ngIf="">Champs invalide</div>      </div>      <div class="form-group">        <input formControlName="reference" type="texte" class="form-control" placeholder="Enter reference">      </div>      <div class="form-group">          <select formControlName="state" class="form-control">            <option *ngFor="let state of states" [ngValue]="state"> {{ state }} </option>          </select>        </div>      <div class="form-group">        <input formControlName="deliveryDate" type="date" class="form-control" placeholder="Delivery date">      </div>      <button [disabled]="form.invalid" type="submit" class="btn btn-primary">Submit</button>      <div class="right float-right">      <button [disabled]="form.invalid" type="reset" class="btn btn-primary">Reset</button>      </div>    </form>  </div></div>'
+        var COMPONENT_TEMPLATE = '<div><div class="container">  <form novalidate (ngSubmit)="process()" [formGroup]="form">    <div class="form-group">      <input formControlName="name" type="texte" class="form-control" placeholder="Enter name">      <div class="alert alert-danger" *ngIf="isError(\'name\')">Champs invalide </div>    </div>      <div class="form-group">        <input formControlName="reference" type="texte" class="form-control" placeholder="Enter reference">        <div class="alert alert-danger" *ngIf="isError(\'reference\')">Champs invalide</div>      </div>      <div class="form-group">        <select formControlName="state" class="form-control">          <option *ngFor="let state of states" [ngValue]="state"> {{ state }} </option>        </select>      </div>      <div class="form-group">          <input class="form-control" placeholder="yyyy-mm-dd"                 name="dp" formControlName="deliveryDate" ngbDatepicker #d="ngbDatepicker"  (click)="d.toggle()">          <div class="input-group-append">            <button class="btn btn-outline-secondary" type="button">              <img src="./assets/img/calendar-icon.svg" style="width: 1.2rem; height: 1rem; cursor: pointer;">            </button>          </div>        </div>      <button [disabled]="form.invalid" type="submit" class="btn btn-primary">Submit</button>      <div class="right float-right">        <button [disabled]="form.invalid" type="reset" class="btn btn-primary">Reset</button>      </div>  </form></div></div>'
     var COMPONENTS = [{'name': 'AbstractComponent', 'selector': 'app-abstract'},{'name': 'AddComponent', 'selector': 'app-add'},{'name': 'AddReactiveComponent', 'selector': 'app-add-reactive'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'DeliveredComponent', 'selector': 'app-delivered'},{'name': 'FormComponent', 'selector': 'app-form'},{'name': 'FormReactiveComponent', 'selector': 'app-form-reactive'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'ItemComponent', 'selector': 'app-item'},{'name': 'ListComponent', 'selector': 'app-list'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'NavComponent', 'selector': 'app-nav'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'}];
     var DIRECTIVES = [{'name': 'StateDirective', 'selector': '[appState]'}];
     var ACTUAL_COMPONENT = {'name': 'FormReactiveComponent'};

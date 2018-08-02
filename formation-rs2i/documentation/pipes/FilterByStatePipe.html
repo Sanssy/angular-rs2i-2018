@@ -281,6 +281,9 @@
                             <li class="link">
                                 <a href="injectables/CollectionService.html" data-type="entity-link">CollectionService</a>
                             </li>
+                            <li class="link">
+                                <a href="injectables/DateService.html" data-type="entity-link">DateService</a>
+                            </li>
                     </ul>
                 </li>
 
@@ -609,6 +612,9 @@
                             <li class="link">
                                 <a href="injectables/CollectionService.html" data-type="entity-link">CollectionService</a>
                             </li>
+                            <li class="link">
+                                <a href="injectables/DateService.html" data-type="entity-link">DateService</a>
+                            </li>
                     </ul>
                 </li>
 
@@ -746,7 +752,7 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/app/shared/pipes/filter-by-state.pipe.ts:9</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/shared/pipes/filter-by-state.pipe.ts:8</a></div>
                             </td>
                         </tr>
 
@@ -819,12 +825,15 @@ import { State } from &#x27;../enums/state.enum&#x27;;
   name: &#x27;filterByState&#x27;
 })
 export class FilterByStatePipe implements PipeTransform {
-
   transform(value: any, args?: any): any {
-    if (args) {
-      return value.filter(item &#x3D;&gt; item.state &#x3D;&#x3D;&#x3D; State.LIVREE);
-    }
+    if (value) {
+      if (args) {
+        return value.filter(item &#x3D;&gt; item.state &#x3D;&#x3D;&#x3D; State.LIVREE);
+        console.log(args);
+      }
       return value.filter(item &#x3D;&gt; item.state !&#x3D;&#x3D; State.LIVREE);
+      console.log(args);
+    }
   }
 }
 </code></pre>

@@ -281,6 +281,9 @@
                             <li class="link">
                                 <a href="injectables/CollectionService.html" data-type="entity-link">CollectionService</a>
                             </li>
+                            <li class="link">
+                                <a href="injectables/DateService.html" data-type="entity-link">DateService</a>
+                            </li>
                     </ul>
                 </li>
 
@@ -609,6 +612,9 @@
                             <li class="link">
                                 <a href="injectables/CollectionService.html" data-type="entity-link">CollectionService</a>
                             </li>
+                            <li class="link">
+                                <a href="injectables/DateService.html" data-type="entity-link">DateService</a>
+                            </li>
                     </ul>
                 </li>
 
@@ -790,12 +796,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(collectionService: <a href="../injectables/CollectionService.html">CollectionService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>)</code>
+<code>constructor(collectionService: <a href="../injectables/CollectionService.html">CollectionService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, dateService: <a href="../injectables/DateService.html">DateService</a>)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/items/containers/add-reactive/add-reactive.component.ts:11</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/items/containers/add-reactive/add-reactive.component.ts:12</a></div>
                             </td>
                         </tr>
 
@@ -829,6 +835,18 @@
                                                   
                                                         <td>
                                                                     <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dateService</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="../injectables/DateService.html" target="_self" >DateService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -878,7 +896,7 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/app/items/containers/add-reactive/add-reactive.component.ts:21</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/items/containers/add-reactive/add-reactive.component.ts:23</a></div>
                             </td>
                         </tr>
 
@@ -947,7 +965,7 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/items/containers/add-reactive/add-reactive.component.ts:18</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/items/containers/add-reactive/add-reactive.component.ts:20</a></div>
                             </td>
                         </tr>
 
@@ -974,6 +992,7 @@
 import { CollectionService } from &#x27;../../../core/services/collection.service&#x27;;
 import { Router } from &#x27;../../../../../node_modules/@angular/router&#x27;;
 import { Item } from &#x27;../../../shared/interfaces/item&#x27;;
+import { DateService } from &#x27;../../../core/services/date.service&#x27;;
 
 @Component({
   selector: &#x27;app-add-reactive&#x27;,
@@ -984,7 +1003,8 @@ export class AddReactiveComponent implements OnInit {
 
   constructor(
     private collectionService: CollectionService,
-    private router: Router
+    private router: Router,
+    private dateService: DateService,
   ) { }
 
   ngOnInit() {

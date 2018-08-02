@@ -3,6 +3,7 @@ import { Item } from '../../interfaces/item';
 import { State } from '../../enums/state.enum';
 import { CollectionService } from '../../../core/services/collection.service';
 import { faCoffee, faPenSquare, faTrashAlt } from '@fortawesome/free-solid-svg-icons';
+import { Router } from '../../../../../node_modules/@angular/router';
 
 
 @Component({
@@ -18,15 +19,34 @@ export class ItemComponent implements OnInit {
   faPenSquare = faPenSquare;
   faTrashAlt = faTrashAlt;
 
-  constructor(private collectionService: CollectionService) { }
+  constructor(
+    private collectionService: CollectionService,
+    private route: Router,
+  ) { }
 
   ngOnInit() {
   }
 
+
   public changeState(state: State): void {
-    this.item.state = state;
-    // update item using collectionService in database
-    this.collectionService.update(this.item);
+  this.item.state = state;
+  // update item using collectionService in database
+    return this.collectionService.update(this.item);
+    // this.collectionService.update(item).subscribe((data) =>{
+    //   if (data) {
+    //     data.state = item.state;
+    //   };
+    // });
   }
 
+
+  public delete(): void {
+    console.log('test');
+    this.collectionService.delete(this.item);
+  //   this.collectionService.delete(item).subscribe((data) => {
+  //     if (data) {
+
+  //     }
+  //   });
+  }
 }
