@@ -2,6 +2,8 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Item } from '../../interfaces/item';
 import { State } from '../../enums/state.enum';
 import { CollectionService } from '../../../core/services/collection.service';
+import { faCoffee, faPenSquare, faTrashAlt } from '@fortawesome/free-solid-svg-icons';
+
 
 @Component({
   selector: 'app-item',
@@ -9,9 +11,13 @@ import { CollectionService } from '../../../core/services/collection.service';
   styleUrls: ['./item.component.css']
 })
 export class ItemComponent implements OnInit {
-  public state = State;
   @Input() item: Item;
+  public state = State;
   public states = Object.values(State);
+  faCoffee = faCoffee;
+  faPenSquare = faPenSquare;
+  faTrashAlt = faTrashAlt;
+
   constructor(private collectionService: CollectionService) { }
 
   ngOnInit() {

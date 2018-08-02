@@ -13,7 +13,7 @@ import { AddComponent } from './containers/add/add.component';
   imports: [
     CommonModule,
     SharedModule,
-    ItemsRoutingModule
+    ItemsRoutingModule,
   ],
   declarations: [ListComponent, DeliveredComponent, AbstractComponent, AddComponent],
   exports: [ListComponent, DeliveredComponent]

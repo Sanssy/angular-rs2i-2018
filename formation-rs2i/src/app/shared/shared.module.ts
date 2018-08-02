@@ -7,6 +7,9 @@ import { FilterByStatePipe } from './pipes/filter-by-state.pipe';
 import { StateDirective } from './directives/state.directive';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+ // external libraries
+ import { IconsModule } from '../icons/icons.module';
+
 import { FormsModule } from '@angular/forms';
 
 import { RouterModule } from '@angular/router';
@@ -17,7 +20,8 @@ import { FormComponent } from './components/form/form.component';
     CommonModule,
     NgbModule,
     RouterModule,
-    FormsModule
+    FormsModule,
+    IconsModule
   ],
   declarations: [NavComponent, ItemComponent, CapitalizePipe, FilterByStatePipe, StateDirective, FormComponent],
   exports: [NavComponent, ItemComponent, FilterByStatePipe, FormComponent, FormsModule]
