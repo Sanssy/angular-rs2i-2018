@@ -3,7 +3,7 @@ import { Item } from '../../interfaces/item';
 import { State } from '../../enums/state.enum';
 import { CollectionService } from '../../../core/services/collection.service';
 import { faCoffee, faPenSquare, faTrashAlt } from '@fortawesome/free-solid-svg-icons';
-import { Router } from '../../../../../node_modules/@angular/router';
+import { Router } from '@angular/router';
 
 
 @Component({

@@ -4,7 +4,7 @@ import { Item } from '../../shared/interfaces/item';
 import { AngularFirestore, AngularFirestoreCollection } from 'angularfire2/firestore';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import { url } from 'inspector';
+// import { url } from 'inspector';
 
 
 @Injectable({
@@ -14,11 +14,11 @@ export class CollectionService {
   private itemsCollection: AngularFirestoreCollection<Item>;
 
   private _collection: Observable<Item[]>;
-  private url_api = 'api.monsite.com/';
+  // private url_api = 'api.monsite.com/';
 
   constructor(
     private afs: AngularFirestore,
-    private http: HttpClient,
+    // private http: HttpClient,
   ) {
     // this.collection = COLLECTION;
     this.itemsCollection = afs.collection<Item>('collection');
@@ -43,10 +43,10 @@ export class CollectionService {
   /**
    * get 1 item from collection
    */
-
-  // public add(item: Item): void {
-  //   // this.collection.push(item);
-  // }
+  getItem(id: string): Observable<Item> {
+    const item = this.afs.doc<Item>(`collection/${id}`).valueChanges();
+    return item;
+  }
 
   // public update(arg0: Item): void {
   //   // update + catch pour les erreurs

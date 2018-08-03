@@ -19,6 +19,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { FormComponent } from './components/form/form.component';
 import { FormReactiveComponent } from './components/form-reactive/form-reactive.component';
+import { FormLoginComponent } from './components/form-login/form-login.component';
 
 @NgModule({
   imports: [
@@ -29,7 +30,7 @@ import { FormReactiveComponent } from './components/form-reactive/form-reactive.
     IconsModule,
     ReactiveFormsModule
   ],
-  declarations: [NavComponent, ItemComponent, CapitalizePipe, FilterByStatePipe, StateDirective, FormComponent, FormReactiveComponent],
-  exports: [NavComponent, ItemComponent, FilterByStatePipe, FormComponent, FormsModule, FormReactiveComponent]
+  declarations: [NavComponent, ItemComponent, CapitalizePipe, FilterByStatePipe, StateDirective, FormComponent, FormReactiveComponent, FormLoginComponent],
+  exports: [NavComponent, ItemComponent, FilterByStatePipe, FormComponent, FormsModule, FormReactiveComponent, FormLoginComponent]
 })
 export class SharedModule { }

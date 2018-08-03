@@ -16,7 +16,6 @@ export class ListComponent extends AbstractComponent implements OnInit {
    }
 
   ngOnInit() {
-     console.log('test');
     }
 
   // public add(item: Item): void {

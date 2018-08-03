@@ -1,7 +1,7 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { Item } from '../../interfaces/item';
 import { State } from '../../enums/state.enum';
-import { Router } from '../../../../../node_modules/@angular/router';
+import { Router } from '@angular/router';
 import { DateService } from '../../../core/services/date.service';
 
 @Component({

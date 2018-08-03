@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CollectionService } from '../../../core/services/collection.service';
-import { Router } from '../../../../../node_modules/@angular/router';
+import { Router } from '@angular/router';
 import { Item } from '../../../shared/interfaces/item';
 import { DateService } from '../../../core/services/date.service';
 

@@ -1,5 +1,5 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from '../../../../../node_modules/@angular/forms';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { State } from '../../enums/state.enum';
 import { Item } from '../../interfaces/item';
 import { DateService } from '../../../core/services/date.service';
@@ -13,10 +13,10 @@ export class FormReactiveComponent implements OnInit {
   public form: FormGroup;
   public states = Object.values(State);
   @Output() nItem: EventEmitter<Item> = new EventEmitter();
+  @Input() itemToEdit: Item;
   constructor(
     private fb: FormBuilder,
     private dateService: DateService,
-
   ) { }
 
   ngOnInit() {
@@ -25,10 +25,14 @@ export class FormReactiveComponent implements OnInit {
 
   private createForm(): void {
     this.form = this.fb.group({
-      name: ['', Validators.compose([Validators.required, Validators.minLength(5)])],
-      reference: ['', Validators.compose([Validators.required, Validators.minLength(4)])],
+      name: [
+        this.itemToEdit ? this.itemToEdit.name : '',
+        Validators.compose([Validators.required, Validators.minLength(5)])],
+      reference: [
+        this.itemToEdit ? this.itemToEdit.reference : '', Validators.compose([Validators.required, Validators.minLength(4)])],
       state: [State.ALIVRER],
-      deliveryDate: [''], // possibilité de mettre un regex
+      deliveryDate: [
+        this.itemToEdit ? this.dateService.dateToNgbPicker(this.itemToEdit.deliveryDate) : ''], // possibilité de mettre un regex
     });
   }
 
@@ -43,4 +47,6 @@ export class FormReactiveComponent implements OnInit {
     isError(fieldName: string): boolean {
       return this.form.get(fieldName).invalid && this.form.get(fieldName).touched;
     }
+
+
 }
